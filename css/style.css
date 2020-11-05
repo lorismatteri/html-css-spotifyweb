@@ -1,9 +1,55 @@
-body {
-  background-color: red;
+/* Utility */
+.d-flex {
+  display: flex;
 }
 
-.box {
-  background-color: black;
-  height: 200px;
-  width: 200px;
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+/* Body & Main*/
+body {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+.wrapper {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#site_content {
+  height: calc(100% - 60px);
+}
+
+/* Sezione Sidebar */
+aside.main_menu {
+  min-width: 300px;
+  background-color: rgb(4, 4, 4);
+}
+
+/* Sezione Covers */
+.cover_section {
+  width: calc(100% - 300px);
+  background-color: rgb(20, 25, 34);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 60px 20px 20px 20px;
+}
+
+/* Sezione Banner */
+.subscribe_banner {
+  height: 60px;
+  width: calc(100% - 300px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(4, 4, 4, 0.6);
+}
+
+/* Footer */
+#site_footer {
+  background-color: rgb(40, 40, 40);
+  height: 60px;
 }
