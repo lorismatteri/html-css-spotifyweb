@@ -24,28 +24,59 @@ body {
 }
 
 /* Sezione Sidebar */
-aside.main_menu {
-  min-width: 30rem;
+#side_bar {
+  min-width: 25rem;
   background-color: rgb(4, 4, 4);
 }
 
-/* Sezione Covers */
-#paragrafo {
-  height: 1500px;
+#side_bar .logo img {
+  max-height: 4rem;
+  margin: 1rem;
 }
 
-.cover_section {
-  width: calc(100% - 30rem);
-  background-color: rgb(20, 25, 34);
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 6rem 2rem 2rem 2rem;
+#side_bar h4 {
+  font-weight: 700;
+  padding-left: 2rem;
+}
+
+#side_bar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#side_bar li a {
+  display: inline-block;
+  color: rgb(179, 179, 179);
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  padding-left: 2rem;
+}
+
+#side_menu i {
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+#playlist i {
+  font-size: 4rem;
+  padding-right: 1rem;
+}
+
+#playlist ul:first-child i{
+  vertical-align: middle;
+}
+
+#side_bar li a:hover, #side_bar li a:focus {
+  border-left: 4px solid #ADFF2F;
+  text-decoration: none;
+  color: white;
 }
 
 /* Sezione Banner */
 .subscribe_banner {
   height: 6rem;
-  width: calc(100% - 30rem);
+  width: calc(100% - 25rem);
   position: fixed;
   top: 0;
   right: 0;
@@ -70,6 +101,19 @@ aside.main_menu {
 .subscribe_banner button:hover {
   border-color: #1DB954;
   background-color: #1DB954;
+}
+
+/* Sezione Covers */
+#paragrafo {
+  height: 1500px;
+}
+
+.cover_section {
+  width: calc(100% - 25rem);
+  background-color: rgb(20, 25, 34);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 6rem 2rem 2rem 2rem;
 }
 
 /* Footer */
