@@ -25,18 +25,30 @@ body {
 
 /* Sezione Sidebar */
 #side_bar {
+  position: relative;
   min-width: 25rem;
   background-color: rgb(4, 4, 4);
+  overflow-y: hidden;
 }
 
 #side_bar .logo img {
-  max-height: 4rem;
-  margin: 1rem;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  max-width: 65%;
+}
+
+#side_menu .menu_logo {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1.5rem;
 }
 
 #side_bar h4 {
   font-weight: 700;
   padding-left: 2rem;
+  font-size: 2rem;
 }
 
 #side_bar ul {
@@ -47,20 +59,16 @@ body {
 #side_bar li a {
   display: inline-block;
   color: rgb(179, 179, 179);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
   padding: 1rem 0;
   padding-left: 2rem;
-}
-
-#side_menu i {
-  font-size: 2rem;
-  padding-right: 1rem;
+  transition: color 1s ease-out;
 }
 
 #playlist i {
-  font-size: 4rem;
-  padding-right: 1rem;
+  font-size: 4.5rem;
+  margin-right: 1.5rem;
 }
 
 #playlist ul:first-child i{
@@ -73,6 +81,69 @@ body {
   color: white;
 }
 
+#user_download {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+#user_download hr {
+  margin: 0 1.5rem;
+  color: rgb(179, 179, 179);
+  background: rgb(179, 179, 179);
+  border: 0;
+  height: 1px;
+}
+
+#install_app div, #profile div {
+  display: inline-block;
+}
+
+#install_app img {
+  height: 2rem;
+  margin-right: 1.5rem;
+}
+
+#install_app a {
+  display: inline-block;
+  color: rgb(179, 179, 179);
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  padding-left: 2rem;
+  transition: color 1s ease-out;
+}
+
+#profile div {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: rgb(128, 128, 128);
+  background-image: url('../img/profile.svg');
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  vertical-align: middle;
+}
+
+#profile a {
+  display: inline-block;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  padding-left: 2rem;
+  transition: color 1s ease-out;
+}
+
+#install_app a:hover, #install_app a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+#profile a:hover, #profile a:focus {
+  text-decoration: none;
+  color: #1DB954;
+}
 /* Sezione Banner */
 .subscribe_banner {
   height: 6rem;
@@ -82,7 +153,7 @@ body {
   right: 0;
   background-color: rgba(4, 4, 4, 0.6);
   justify-content: flex-end;
-  padding: 1.6rem 3.2rem;
+  padding: 1.5rem 3rem;
 }
 
 .subscribe_banner button {
@@ -90,7 +161,7 @@ body {
   color: white;
   border: 1px solid white;
   border-radius: 50rem;
-  padding: 0.8rem 3.4rem;
+  padding: 0.8rem 3rem;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.2rem;
