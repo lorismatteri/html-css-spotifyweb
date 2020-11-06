@@ -182,6 +182,44 @@ body {
   background-color: #1DB954;
 }
 
+/* Sezione Navbar */
+nav {
+  width: 100%;
+  /* padding: 0 3.5rem; */
+  justify-content: center;
+}
+
+.navlink {
+  position: relative;
+  text-decoration: none;
+  color: #B3B3B3;
+  font-weight: 700;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  padding: 1.5rem 2rem;
+}
+
+.navlink::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  opacity: 0;
+  width: 4rem;
+  height: 3px;
+  background-color: #ADFF2F;
+}
+
+.navlink:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.navlink:hover.navlink::after {
+  opacity: 1;
+}
+
 /* Sezione Covers */
 #paragrafo {
   height: 1500px;
@@ -192,7 +230,7 @@ body {
   background-color: rgb(20, 25, 34);
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 6rem 2rem 2rem 2rem;
+  padding: 6rem 0 0 0;
 }
 
 /* Footer */
@@ -235,5 +273,17 @@ body {
 
   .cover_section {
     width: calc(100% - 7.5rem);
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 991px) {
+  nav {
+    padding: 0 7rem;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  nav {
+    padding: 0 3.5rem;
   }
 }
