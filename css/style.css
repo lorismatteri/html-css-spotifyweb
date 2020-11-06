@@ -196,7 +196,8 @@ nav {
   font-weight: 700;
   line-height: 3rem;
   font-size: 1.8rem;
-  padding: 1.5rem 2rem;
+  padding: 2.5rem 2rem 0;
+  transition: all 1s ease-in;
 }
 
 .navlink::after {
@@ -209,6 +210,7 @@ nav {
   width: 4rem;
   height: 3px;
   background-color: #ADFF2F;
+  transition: all 1s ease-in;
 }
 
 .navlink:hover {
@@ -221,16 +223,33 @@ nav {
 }
 
 /* Sezione Covers */
-#paragrafo {
-  height: 1500px;
-}
-
 .cover_section {
   width: calc(100% - 25rem);
   background-color: rgb(20, 25, 34);
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 6rem 0 0 0;
+  padding: 6rem 2rem 0;
+}
+
+.cover_section h2 {
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+.item {
+}
+
+.item img {
+  max-width: 70%;
+}
+
+.item h4 {
+  font-weight: 800;
+}
+
+.item p {
+  font-weight: 700;
+  color: #B3B3B3;
 }
 
 /* Footer */
@@ -274,16 +293,34 @@ nav {
   .cover_section {
     width: calc(100% - 7.5rem);
   }
+
+  .item {
+    width: 50%;
+  }
 }
 
 @media all and (min-width: 769px) and (max-width: 991px) {
   nav {
     padding: 0 7rem;
   }
+
+  .item {
+    width: 50%;
+  }
 }
 
 @media all and (min-width: 992px) and (max-width: 1199px) {
   nav {
     padding: 0 3.5rem;
+  }
+
+  .item {
+    width: 25%;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  #recently_played {
+    flex-wrap: wrap;
   }
 }
