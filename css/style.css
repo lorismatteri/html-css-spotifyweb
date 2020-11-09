@@ -177,13 +177,21 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.2rem;
-  transition: all 2s;
-  transition-timing-function: ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 .subscribe_banner button:hover {
   border-color: #1DB954;
   background-color: #1DB954;
+}
+
+.subscribe_banner i {
+  display: none;
+  cursor: pointer;
+  color: white;
+  font-size: 2.5rem;
+  align-self: center;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Sezione Navbar */
@@ -225,13 +233,23 @@ nav {
   opacity: 1;
 }
 
+#nav_sm {
+  font-size: 4.5rem;
+  color: white;
+  display: none;
+  padding-top: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s ease-in;
+}
+
 /* Sezione Covers */
 .cover_section {
   width: calc(100% - 25rem);
   background-color: rgb(20, 25, 34);
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 6rem 2rem 0;
+  padding: 6rem 2rem 3rem;
 }
 
 .cover_section h2 {
@@ -308,16 +326,6 @@ nav {
   padding: 1rem;
   flex-basis: 33.33%;
 }
-/* .widget:nth-child(2) {
-  width: calc(100% - 50rem);
-  padding: 1rem;
-}
-
-.widget:not(:nth-child(2)) {
-  width: 25rem;
-  padding: 1rem;
-  position: relative;
-} */
 
 .widget img {
   height: 4rem;
@@ -346,6 +354,7 @@ nav {
   color: white;
   font-size: 1.4rem;
   font-weight: 700;
+  padding-bottom: 0.5rem;
 }
 
 .widget p {
@@ -361,18 +370,31 @@ nav {
 #icons i {
   font-size: 2rem;
   color: #808080;
+  cursor: pointer;
 }
 
 #icons i:last-child {
   padding-left: 1rem;
 }
 
-.player_top i:not(:last-child) {
-  padding-right: 2rem;
+#icons i:first-child, #icons i:last-child {
+  transition: color 1s linear;
+}
+
+#icons i:first-child:hover, #icons i:last-child:hover {
+  color: #1DB954;
+}
+
+.player_top {
+  width: 45%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .player_top i {
   font-size: 1.2rem;
+  color: #808080;
 }
 
 .player_top i:nth-child(3) {
@@ -381,6 +403,12 @@ nav {
 
 .player_top i {
   vertical-align: middle;
+  transition: all 0.15s linear;
+}
+
+.player_top i:hover, .widget:nth-child(3) i:hover {
+  color: white;
+  transform: scale(1.2);
 }
 
 .player_bottom span {
@@ -439,6 +467,7 @@ nav {
 .widget:nth-child(3) i {
   font-size: 1.5rem;
   padding-right: 2rem;
+  color: #808080;
 }
 
 #volume_slider {
@@ -538,5 +567,33 @@ nav {
 @media all and (max-width: 1199px) {
   #recently_played {
     flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .subscribe_banner i {
+    display: block;
+  }
+
+  .subscribe_banner i:hover, .subscribe_banner i:focus {
+    color: #1DB954;
+  }
+
+  .subscribe_banner button {
+    display: none;
+  }
+}
+
+@media all and (max-width: 572px) {
+  .cover_section nav {
+    display: none;
+  }
+
+  #nav_sm {
+    display: block;
+  }
+
+  #nav_sm:hover, #nav_sm:focus {
+    color: #1DB954;
   }
 }
