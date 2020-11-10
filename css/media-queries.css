@@ -37,6 +37,28 @@
   .item {
     width: 50%;
   }
+
+  #slider {
+    width: 45%;
+  }
+
+  #icons {
+    padding-left: 2.5rem;
+  }
+
+  #icons i {
+    display: block;
+  }
+
+  #icons i:last-child {
+    padding-left: 0;
+    padding-top: 0.5rem;
+  }
+
+  .player_top {
+    width: auto;
+    margin: 0;
+  }
 }
 
 @media all and (min-width: 769px) and (max-width: 991px) {
@@ -47,6 +69,23 @@
   .item {
     width: 50%;
   }
+
+  #slider {
+    width: 50%;
+  }
+
+  #icons {
+    padding-left: 2.5rem;
+  }
+
+  #icons i {
+    display: block;
+  }
+
+  #icons i:last-child {
+    padding-left: 0;
+    padding-top: 0.5rem;
+  }
 }
 
 @media all and (min-width: 992px) and (max-width: 1199px) {
@@ -56,6 +95,10 @@
 
   .item {
     width: 25%;
+  }
+
+  #slider {
+    width: 65%;
   }
 }
 
@@ -77,6 +120,58 @@
   .subscribe_banner button {
     display: none;
   }
+
+  .cover_section h4 {
+    font-size: 1.5rem;
+  }
+
+  .cover_section p {
+    font-size: 1.1rem;
+  }
+
+  .player_top i:nth-child(4n+1) {
+    display: none;
+  }
+
+  .widget:nth-child(3) i, #volume_slider {
+    display: none;
+  }
+
+  #site_footer .widget.d-flex {
+    justify-content: center;
+  }
+
+  #menu_sm_right {
+    display: block;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .widget h5, .widget p {
+    display: none;
+  }
+
+  #menu_sm_left {
+    display: inline-block;
+  }
+
+}
+
+@media all and (max-width: 480px) {
+  #icons {
+    display: none;
+  }
+}
+
+@media all and (max-width: 503px) {
+  .player_bottom span:not(:nth-child(2)) {
+    display: none;
+  }
+
+  #slider {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media all and (max-width: 572px) {
@@ -90,5 +185,9 @@
 
   #nav_sm:hover, #nav_sm:focus {
     color: #1DB954;
+  }
+
+  #icons {
+    padding-left: 1rem;
   }
 }

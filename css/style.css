@@ -164,6 +164,7 @@ body {
   background-color: rgba(4, 4, 4, 0.6);
   justify-content: flex-end;
   padding: 1.5rem 3rem;
+  z-index: 999;
 }
 
 .subscribe_banner button {
@@ -381,6 +382,19 @@ nav {
 
 #icons i:first-child:hover, #icons i:last-child:hover {
   color: #1DB954;
+}
+
+#menu_sm_left, #menu_sm_right {
+  display: none;
+  font-size: 2rem;
+  vertical-align: middle;
+  color: #808080;
+  padding: 0;
+  transition: color 1s ease-in;
+}
+
+#menu_sm_left:hover, #menu_sm_right:hover {
+  color: white;
 }
 
 .player_top {
