@@ -35,9 +35,7 @@ body {
 }
 
 #side_bar .logo img {
-  padding-left: 2rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 0 1.5rem 2rem;
   max-width: 65%;
 }
 
@@ -262,7 +260,7 @@ nav {
 }
 
 .item {
-  margin-right: 2rem;
+  padding-right: 2rem;
 }
 
 .item_img {
@@ -501,99 +499,4 @@ nav {
   border: 0.5px solid rgb(40, 40, 40);
   border-radius: 50%;
   opacity: 0;
-}
-
-/* Media Queries */
-@media all and (max-width: 768px) {
-  #side_bar {
-    min-width: 7.5rem;
-  }
-
-  #side_bar .logo a:nth-child(1n+2), #side_bar span, #side_bar h4, #playlist, #user_download span, #user_download hr {
-    display: none;
-  }
-
-  #install_app, #profile {
-    position: relative;
-    padding: 1rem;
-  }
-
-  #user_download a {
-    padding-left: 0;
-  }
-
-  #install_app img, #profile_img {
-    position: absolute;
-    left: 50%;
-    bottom: 1rem;
-    transform: translateX(-50%);
-    margin-right: 0;
-  }
-
-  .subscribe_banner {
-    height: 6rem;
-    width: calc(100% - 7.5rem);
-  }
-
-  .cover_section {
-    width: calc(100% - 7.5rem);
-  }
-
-  .item {
-    width: 50%;
-  }
-}
-
-@media all and (min-width: 769px) and (max-width: 991px) {
-  nav {
-    padding: 0 7rem;
-  }
-
-  .item {
-    width: 50%;
-  }
-}
-
-@media all and (min-width: 992px) and (max-width: 1199px) {
-  nav {
-    padding: 0 3.5rem;
-  }
-
-  .item {
-    width: 25%;
-  }
-}
-
-@media all and (max-width: 1199px) {
-  #recently_played {
-    flex-wrap: wrap;
-  }
-}
-
-@media all and (max-width: 480px) {
-  .subscribe_banner i {
-    display: block;
-  }
-
-  .subscribe_banner i:hover, .subscribe_banner i:focus {
-    color: #1DB954;
-  }
-
-  .subscribe_banner button {
-    display: none;
-  }
-}
-
-@media all and (max-width: 572px) {
-  .cover_section nav {
-    display: none;
-  }
-
-  #nav_sm {
-    display: block;
-  }
-
-  #nav_sm:hover, #nav_sm:focus {
-    color: #1DB954;
-  }
 }
