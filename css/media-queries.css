@@ -34,7 +34,7 @@
     width: calc(100% - 7.5rem);
   }
 
-  .item {
+  .item, #created_for .item, #popular .item {
     width: 50%;
   }
 
@@ -66,7 +66,7 @@
     padding: 0 7rem;
   }
 
-  .item {
+  .item, #created_for .item, #popular .item {
     width: 50%;
   }
 
@@ -93,7 +93,7 @@
     padding: 0 3.5rem;
   }
 
-  .item {
+  .item, #created_for .item, #popular .item {
     width: 25%;
   }
 
@@ -189,5 +189,21 @@
 
   #icons {
     padding-left: 1rem;
+  }
+}
+
+@media all and (max-height: 380px) {
+  #user_download {
+    display: none;
+  }
+}
+
+@media all and (max-height: 150px) {
+  .subscribe_banner {
+    display: none;
+  }
+
+  .cover_section {
+    padding: 0;
   }
 }

@@ -41,9 +41,7 @@ body {
 
 #side_bar .logo .logo_sm {
   max-width: 5rem;
-  padding-left: 2rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 0 1.5rem 2rem;
 }
 
 #side_menu .menu_logo {
@@ -69,8 +67,7 @@ body {
   color: rgb(179, 179, 179);
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 1rem 0;
-  padding-left: 2rem;
+  padding: 1rem 0 1rem 2rem;
   transition: color 1s ease-out;
 }
 
@@ -118,8 +115,7 @@ body {
   color: rgb(179, 179, 179);
   font-size: 1.2rem;
   font-weight: 700;
-  padding: 1rem 0;
-  padding-left: 2rem;
+  padding: 1rem 0 1rem 2rem;
   transition: color 1s ease-out;
 }
 
@@ -139,8 +135,7 @@ body {
   color: white;
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 1rem 0;
-  padding-left: 2rem;
+  padding: 1rem 0 1rem 2rem;
   transition: color 1s ease-out;
 }
 
@@ -307,11 +302,11 @@ nav {
   color: #808080;
 }
 
-#popular img {
-  border-radius: 50%;
+#created_for .item, #popular .item {
+  width: calc(100% / 6);
 }
 
-#popular .overlay {
+#popular img, #popular .overlay {
   border-radius: 50%;
 }
 
