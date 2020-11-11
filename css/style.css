@@ -68,7 +68,8 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   padding: 1rem 0 1rem 2rem;
-  transition: color 1s ease-out;
+  border-left: 4px solid rgb(4, 4, 4);
+  transition: all 1s ease-out;
 }
 
 #playlist i {
@@ -229,7 +230,7 @@ nav {
 
 #nav_sm {
   font-size: 4.5rem;
-  color: white;
+  color: #808080;
   display: none;
   padding-top: 1.5rem;
   text-align: center;
@@ -333,28 +334,25 @@ nav {
 
 .widget a {
   text-decoration: none;
+  display: block;
 }
 
-.widget a:hover {
-  text-decoration: underline;
-  color: white;
-}
-
-.widget h5, .widget p {
-  margin: 0;
-}
-
-.widget h5 {
+.widget a:first-child {
   color: white;
   font-size: 1.4rem;
   font-weight: 700;
   padding-bottom: 0.5rem;
 }
 
-.widget p {
+.widget a:last-child {
   font-size: 1rem;
   font-weight: 700;
   color: #808080;
+}
+
+.widget a:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 #icons {

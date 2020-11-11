@@ -192,7 +192,7 @@
   }
 }
 
-@media all and (max-height: 380px) {
+@media all and (max-height: 580px) {
   #user_download {
     display: none;
   }
